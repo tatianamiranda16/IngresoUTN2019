@@ -35,7 +35,7 @@ function Materiales ()
     var largo;
     var ancho;
     var superficie;
-var Materiales
+    var Materiales
     largo=parseFloat(document.getElementById("Largo").value);
     ancho=parseFloat(document.getElementById("Ancho").value);
     superficie= largo * ancho
