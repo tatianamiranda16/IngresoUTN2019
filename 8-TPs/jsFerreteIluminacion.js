@@ -29,12 +29,14 @@ function CalcularPrecio ()
             document.getElementById("precioDescuento").value = preciodescuento.toFixed(2);
     
     }
-    else if (cantidad == 5 && marca == "ArgentinaLuz"){
+    else if (cantidad == 5 && marca == "ArgentinaLuz")
+    {
         descuento = 35 * 40/100;
         preciodescuento = (cantidad * 35) - descuento * cantidad;
         document.getElementById("precioDescuento").value = preciodescuento.toFixed(2);
     }
-        if (cantidad == 5 && marca != "ArgentinaLuz") {
+       else if (cantidad == 5 && marca != "ArgentinaLuz")
+         {
             descuento = 35 * 30 / 100;
             preciodescuento = (cantidad * 35) - descuento * cantidad;
             document.getElementById("precioDescuento").value = preciodescuento.toFixed(2);
@@ -43,13 +45,30 @@ function CalcularPrecio ()
         
         
             
-        if  (cantidad == 4 && marca == "ArgentinaLuz" ||"FelipeLamparas" ) {
+      else if  (cantidad == 4 && marca == "ArgentinaLuz"  )
+         {
             descuento = 35 * 25/100;
             preciodescuento = (cantidad * 35) - descuento * cantidad;
             document.getElementById("precioDescuento").value = preciodescuento.toFixed(2);
-    }  else (cantidad == 4 && marca != "ArgentinaLuz" ||"FelipeLamparas" ) 
-    {
-        descuento = 35 * 25/100;
+    }  
+            
+      else if  (cantidad == 4 && marca == "FelipeLamparas"  )
+         {
+            descuento = 35 * 25/100;
+            preciodescuento = (cantidad * 35) - descuento * cantidad;
+            document.getElementById("precioDescuento").value = preciodescuento.toFixed(2);
+    }  
+    else if (cantidad == 4 && marca != "ArgentinaLuz")
+     {
+        
+        descuento = 35 * 20/100;
+        preciodescuento = (cantidad * 35) - descuento * cantidad;
+        document.getElementById("precioDescuento").value = preciodescuento.toFixed(2); 
+    }
+     else if (cantidad == 4 && marca != "FelipeLamparas")
+     {
+        
+        descuento = 35 * 20/100;
         preciodescuento = (cantidad * 35) - descuento * cantidad;
         document.getElementById("precioDescuento").value = preciodescuento.toFixed(2); 
     }
