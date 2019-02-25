@@ -1,17 +1,31 @@
 function Mostrar()
 {
 
-	var contador=0;
-	// declarar variables
-	
-	var respuesta='si';
+	var seguir = true ;
+	var numero;
+	var maximo = Number.MIN_VALUE;
+	var minimo = Number.MAX_VALUE;
 
-	while(respuesta!='no')
-	{
-		
-	
+
+	while (seguir){
+  
+		numero = parseInt(prompt("Ingrese numero"));
+		while (isNaN(numero)) {
+			numero = parseInt(prompt("Error. Ingrese numero"));
+		}
+		if (numero < minimo) {
+			minimo = numero;
+		}
+		if (numero > maximo){
+
+			maximo = numero;
+		}
+
+		seguir = confirm("Desea continuar?");
 	}
 
+document.getElementById('maximo').value=maximo;
+document.getElementById('minimo').value=minimo;
 
 
 

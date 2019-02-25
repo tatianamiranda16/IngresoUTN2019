@@ -18,8 +18,17 @@ switch (laHora) {
     case "18":
     case "19":
     alert("es de tarde");
-    
-    default:
+        break;
+    case "0":
+    case "1":
+    case "2":
+    case "3":
+    case "4":
+    case "5":
+    case "6":
+    alert(" es de noche");
+    default: 
+    alert("no es un horario");
         break;
 }
 

@@ -4,8 +4,7 @@ function Mostrar()
 	var contador=0;
 	//declarar contadores y variables 
 	
-	var respuesta="si";
-
+	var seguir = true;
 	while(respuesta!="no")
 	{
 		
